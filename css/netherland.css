@@ -45,6 +45,8 @@
    background-color: #f28c28;
    color: white;
    font-weight: bold;
+   font-size: 18px;
+   letter-spacing: 3px;
 }
 
 .intro-text td {
