@@ -1,0 +1,129 @@
+* {
+   box-sizing: border-box;
+}
+
+.netherland-main {
+   width: 1200px;
+   margin: 0 auto;
+   padding: 30px;
+}
+
+.country-intro {
+   margin-bottom: 30px;
+}
+
+.country-intro img {
+   width: 100%;
+   height: 500px;
+   border-radius: 15px;
+}
+.intro-text table {
+   width: 100%;
+   margin-top: 20px;
+   border-collapse: separate;
+   border-spacing: 0;
+   overflow: hidden;
+   border-radius: 12px;
+   border: 1px solid #e5c9a8;
+   background-color: #fff;
+}
+
+.intro-text th,
+.intro-text td {
+   padding: 14px 18px;
+   text-align: center;
+   border-bottom: 1px solid #f0e1cf;
+}
+
+.intro-text tr:last-child th,
+.intro-text tr:last-child td {
+   border-bottom: none;
+}
+
+.intro-text th {
+   width: 18%;
+   background-color: #f28c28;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   letter-spacing: 3px;
+}
+
+.intro-text td {
+   width: 32%;
+   background-color: #fffdf8;
+   color: #444;
+}
+.event-top,
+.event-bottom {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   margin-bottom: 40px;
+
+}
+
+.event-top img,
+.event-bottom img {
+   margin: 10px 0;
+   padding: 20px;
+   width: 400px;
+   height: 280px;
+   object-fit: cover;
+}
+
+.intro-text {
+   flex: 1;
+   margin: 0;
+   padding: 10px;
+   background: linear-gradient(to right,#fff8f0,#fffdf8);
+   border-left: 6px solid #f28c28;
+   border-radius: 15px;
+   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.12);
+   text-indent: 10px;
+} 
+.event-desc {
+   flex: 1;
+   margin: 0;
+   padding: 20px;
+   background: linear-gradient(to right,#fff8f0,#fffdf8);
+   border-left: 6px solid #f28c28;
+   border-radius: 15px;
+   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.12);
+   line-height: 1.8;
+}
+
+.intro-text h2 {
+   font-size: 28px;
+   color: #d35400;
+}
+.intro-text h2::first-letter {
+   font-size: 36px;
+   color: rgb(255, 229, 142);
+}
+.intro-text h2::after {
+   content: "✿";
+   color: #f39c12;
+   font-size: 22px;
+   margin: 0 15px;
+}
+.event-desc h2 {
+   color: #d35400;
+   margin-top: 0;
+   margin-bottom: 15px;
+   font-size: 28px;
+}
+
+.intro-text p,
+.event-desc p {
+   color: #444;
+   line-height: 1.8;
+   font-size: 17px;
+   text-align: justify;
+}
+
+.intro-text:hover,
+.event-desc:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}

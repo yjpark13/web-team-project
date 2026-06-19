@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 공통 헤더파트 시작 */
+
+html,
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+body {
+    background-color: rgb(95, 70, 38);
+}
+
+.travel-header {}
+
+.travel-header-top {}
+
+.travel-logo {}
+
+.travel-header-text {
+    color: blue;
+}
+
+nav {
+    background-color: rgb(238, 223, 195);
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 14px;
+    padding: 20px;
+}
+
+.menuicons {
+    display: flex;
+    justify-content: center;
+    
+    width: 250px;
+    height: 250px;
+    
+    border-radius: 25px;
+    flex-shrink: 0;
+    text-decoration: none;
+
+    background-color: rgb(255, 245, 221);
+    border: 1px solid rgba(54, 27, 0, 0.734);
+    box-shadow: 2px 2px 2px 2px 5px rgba(105, 68, 21, 0.402);
+
+    /*코너 삽입*/
+}
+
+.menuicons img {
+    display: block;
+    object-fit: contain;
+    display: block;
+}
