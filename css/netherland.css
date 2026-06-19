@@ -2,9 +2,6 @@
    box-sizing: border-box;
 }
 
-body {
-   background-color: #fff4e6;
-}
 .netherland-main {
    width: 1200px;
    margin: 0 auto;
@@ -17,9 +14,44 @@ body {
 
 .country-intro img {
    width: 100%;
-   height: 350px;
+   height: 500px;
+   border-radius: 15px;
+}
+.intro-text table {
+   width: 100%;
+   margin-top: 20px;
+   border-collapse: separate;
+   border-spacing: 0;
+   overflow: hidden;
+   border-radius: 12px;
+   border: 1px solid #e5c9a8;
+   background-color: #fff;
 }
 
+.intro-text th,
+.intro-text td {
+   padding: 14px 18px;
+   text-align: center;
+   border-bottom: 1px solid #f0e1cf;
+}
+
+.intro-text tr:last-child th,
+.intro-text tr:last-child td {
+   border-bottom: none;
+}
+
+.intro-text th {
+   width: 18%;
+   background-color: #f28c28;
+   color: white;
+   font-weight: bold;
+}
+
+.intro-text td {
+   width: 32%;
+   background-color: #fffdf8;
+   color: #444;
+}
 .event-top,
 .event-bottom {
    display: flex;
@@ -46,7 +78,6 @@ body {
    border-left: 6px solid #f28c28;
    border-radius: 15px;
    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.12);
-   line-height: 1.8;
    text-indent: 10px;
 } 
 .event-desc {
@@ -62,11 +93,12 @@ body {
 
 .intro-text h2 {
    font-size: 28px;
-   text-align: center;
    color: #d35400;
-   letter-spacing: 3px;
 }
-.intro-text h2::before,
+.intro-text h2::first-letter {
+   font-size: 36px;
+   color: rgb(255, 229, 142);
+}
 .intro-text h2::after {
    content: "✿";
    color: #f39c12;
