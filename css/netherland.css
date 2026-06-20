@@ -2,10 +2,25 @@
    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(
+        to bottom,
+        #f7f2e8 0%,
+        #fdfaf5 50%,
+        #f7f2e8 100%
+    );
+}
+
 .netherland-main {
-   width: 1200px;
-   margin: 0 auto;
-   padding: 30px;
+    width: 1200px;
+    margin: 30px auto ;
+    padding: 35px;
+
+    border-radius: 25px;
 }
 
 .country-intro {
@@ -61,6 +76,13 @@
    gap: 30px;
    margin-bottom: 40px;
 
+}
+
+.country-intro img,
+.event-top img,
+.event-bottom img{
+    border-radius:18px;
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
 }
 
 .event-top img,
