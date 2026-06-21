@@ -25,10 +25,8 @@ body::before {
     inset: 0;
 
     background-image:
-        linear-gradient(
-            rgba(245, 239, 227, 0.88),
-            rgba(245, 239, 227, 0.88)
-        ),
+        linear-gradient(rgba(245, 239, 227, 0.88),
+            rgba(245, 239, 227, 0.88)),
         url("./image/spain.image/europe-map.png");
 
     background-repeat: no-repeat;
@@ -38,6 +36,10 @@ body::before {
     z-index: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .landing-page {
     position: relative;
@@ -170,16 +172,12 @@ body::before {
 }
 
 
-.side-menu {
-    list-style: none;
-}
-
 .menu-item {
     margin-bottom: 10px;
 
     color: rgb(87, 52, 41);
 
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 700;
 
     transition: 0.15s;
