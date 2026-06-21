@@ -1,74 +1,203 @@
-
-.travel-main {
-    width: 1100px;
-    margin: 0 auto;
-}
-
-.hero {
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.hero img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    display: block;
-    border-radius: 20px;
-}
-
-.hero-text {
-    position: absolute;
-    left: 40px;
-    bottom: 40px;
-    width: 70%;
-    padding: 25px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.45);
-    border-radius: 15px;
-}
-
-.hero-text h2 {
-    margin: 0 0 15px;
-    font-size: 42px;
-}
-
-.hero-text p {
+body {
     margin: 0;
-    line-height: 1.7;
+    color: #2f3440;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
 
-.city-grid {
+    background-image:
+        linear-gradient(
+            rgba(245, 239, 227, 0.88),
+            rgba(245, 239, 227, 0.88)
+        ),
+        url("../image/spain.image/europe-map.png");
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100vw auto;
+
+    z-index: -1;
+}
+
+.spain-main {
+    max-width: 1400px;
+    margin: 50px auto 100px;
+    padding: 0 30px;
+}
+
+.spain-hero {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.spain-hero img {
+    width: 100%;
+    height: 550px;
+    display: block;
+    object-fit: cover;
+}
+
+.spain-info-card {
+    padding: 40px;
+    background: rgba(255, 252, 246, 0.96);
+    border-left: 6px solid #b84a1b;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 8px 20px rgba(60, 48, 36, 0.12);
+}
+
+.spain-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 16px;
+
+    border-radius: 30px;
+    background-color: #fff0df;
+
+    color: #b84a1b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.spain-info-card h1 {
+    margin: 0;
+
+    color: #b84a1b;
+    font-size: 58px;
+
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.spain-info-card h1 small {
+    margin-left: 15px;
+
+    color: #5f4031;
+    font-size: 34px;
+}
+
+.spain-subtitle {
+    margin-top: 12px;
+    margin-bottom: 35px;
+
+    color: #75614f;
+    font-size: 18px;
+}
+
+.spain-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-item {
+    padding: 25px;
+
+    background-color: #fff8ef;
+    border: 1px solid #ead5c5;
+    border-radius: 14px;
+
+    text-align: center;
+    transition: 0.2s;
+}
+
+.info-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.info-item span {
+    display: block;
+    margin-bottom: 10px;
+
+    color: #b84a1b;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.info-item strong {
+    color: #303640;
+    font-size: 20px;
+}
+
+.spain-content-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 35px;
-    align-items: center;
+    gap: 40px;
+
+    margin-top: 50px;
+    align-items: stretch;
 }
 
-.city-img img {
+.spain-content-row.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.spain-photo-card {
+    height: 580px;
+
+    padding: 0;
+    overflow: hidden;
+
+    background: none;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(60, 48, 36, 0.13);
+}
+
+.spain-photo-card img {
     width: 100%;
-    height: 320px;
-    object-fit: cover;
+    height: 100%;
+
     display: block;
-    border-radius: 18px;
+    object-fit: cover;
 }
 
-.city-info {
-    padding: 35px;
-    background-color: white;
-    border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+.spain-text-card {
+    height: 580px;
+
+    padding: 40px;
+
+    background: rgba(255, 252, 246, 0.96);
+
+    border-left: 6px solid #b84a1b;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(60, 48, 36, 0.13);
+
+    display: flex;
+    flex-direction: column;
 }
 
-.city-info h3 {
-    margin: 0 0 20px;
-    font-size: 30px;
-    color: #b24a1b;
+.spain-text-card:hover {
+    transform: translateY(-3px);
+    background-color: #fff2e7;
+    transition: 0.2s;
 }
 
-.city-info p {
+.spain-text-card h2 {
+    margin: 0 0 35px;
+
+    color: #b84a1b;
+    font-size: 48px;
+
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+}
+
+.spain-text-card p {
     margin: 0;
-    line-height: 1.8;
-    font-size: 16px;
+
+    color: #303640;
+    font-size: 18px;
+    line-height: 2;
+
+    word-break: keep-all;
+}
+
+.spain-text-card p + p {
+    margin-top: 30px;
 }
