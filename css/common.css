@@ -2,10 +2,30 @@
     box-sizing: border-box;
 }
 
-html,
 body {
     margin: 0;
-    padding: 0;
+    color: #2f3440;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(245,239,227,0.88),
+            rgba(245,239,227,0.88)
+        ),
+        url("../image/spain.image/europe-map.png");
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100vw auto;
+
+    pointer-events: none;
+    z-index: -1;
 }
 
 /* 공통 헤더파트 시작 */
