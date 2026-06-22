@@ -204,3 +204,60 @@
         grid-template-columns: 1fr;
     }
 }
+
+.faq-note {
+    width: 1100px;
+    max-width: 90%;
+    margin: 40px auto 70px;
+
+    display: grid;
+    grid-template-columns: 1.4fr 1fr auto;
+    align-items: center;
+    gap: 35px;
+
+    padding: 38px 45px;
+    border-left: 7px solid #8b5e3c;
+    border-radius: 18px;
+
+    background: rgba(255, 250, 241, 0.92);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.faq-note h2 {
+    margin-bottom: 22px;
+    font-size: 30px;
+    color: #3a2418;
+}
+
+.faq-note p {
+    line-height: 1.8;
+    color: #4b2d1f;
+}
+
+.faq-note ul {
+    padding-left: 22px;
+    line-height: 2.1;
+    font-weight: 600;
+    color: #4b2d1f;
+}
+
+.faq-link {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 10px;
+
+    background: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+
+    white-space: nowrap;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.faq-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
