@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 공통 헤더파트 시작 */
+.travel-header {
+    background-color: rgb(239, 230, 204);
+    background-image: linear-gradient(to bottom, #00000000, #9161357e);
+    border-bottom: 2px solid rgb(87, 52, 41);
+    text-align: center;
+    
+    box-shadow: 0px 0px 1px 3px rgba(39, 32, 24, 0.199);
+}
+
+.travel-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 15px 2%;
+    border-left: 10px solid rgb(87, 52, 41);
+    border-bottom: 3px dashed rgb(87, 52, 41);
+}
+
+.travel-logo {
+    text-decoration: none;
+    color: rgb(87, 52, 41);
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 3px rgba(39, 32, 24, 0.301);
+}
+
+.travel-logo::before {
+    vertical-align: middle;
+    content: "✈";
+    font-size: 50px;
+
+    display: inline-block;
+    border: 3px dashed rgb(87, 52, 41);
+    border-radius: 50%;
+    background-color: rgb(255, 245, 221);
+
+    line-height: 50px;
+    padding-left: 5px;
+    padding-right: 2px;
+    padding-bottom: 7px;
+
+    box-shadow: 0px 0px 0px 1px rgba(39, 32, 24, 0.199);
+}
+
+.travel-logo:hover {
+    transform: translateX(5px);
+}
+
+.travel-logo span {
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+p.travel-header-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(87, 52, 41);
+}
+
+nav.passport-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    padding: 20px 3%;
+    
+}
+
+.menuicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc((100% - 56px) / 5);
+    max-width: 250px;
+    min-width: 120px;
+
+    aspect-ratio: 1 / 1;
+
+    flex-shrink: 0;
+    text-decoration: none;
+
+    background-color: rgb(255, 245, 221);
+    box-shadow: 7px 7px 2px rgba(39, 32, 24, 0.562);
+    border: 3px dotted rgb(124, 76, 60);
+    border-radius: 10%;
+}
+
+.menuicons:hover {
+    background-color: rgb(255, 244, 229);
+    border: 3px dotted rgb(124, 76, 60);
+    border-radius: 10%;
+    transform: scale(1.05);
+    transition: transform 0.1s ease-in-out;
+}
+
+.menuicons img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/*footer페이지*/
+.travel-footer,
+.travel-footer * {
+    box-sizing: border-box;
+}
+
+.travel-footer {
+    margin: 0 auto;
+    padding: 25px;
+
+    background-color: #2f251c;
+    color: #f8ead0;
+}
+
+.footer-ticket {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 5px;
+
+    border: 2px dashed rgba(248, 234, 208, 0.7);
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}

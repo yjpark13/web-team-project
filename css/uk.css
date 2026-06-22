@@ -1,0 +1,236 @@
+body {
+   margin: 0;
+   color: #2f3440;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-image:
+        linear-gradient(
+            rgba(245, 239, 227, 0.88),
+            rgba(245, 239, 227, 0.88)
+        ),
+        url("../image/spain.image/europe-map.png");
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100vw auto;
+
+    
+}
+
+.uk-main {
+   max-width: 1200px;
+   margin: 56px auto 90px;
+   padding: 0 36px;
+}
+
+
+
+
+.uk-hero {
+   width: 100%;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 8px 22px rgba(31, 52, 78, 0.18);
+}
+
+.uk-hero img {
+   width: 100%;
+   height: 500px;
+   display: block;
+   object-fit: cover;
+}
+
+
+
+.uk-info-card {
+   margin-top: 0;
+   padding: 36px 28px 12px;
+
+   background: rgba(255, 252, 246, 0.96);
+   border-left: 6px solid #2f6fad;
+   border-radius: 0 0 14px 14px;
+   box-shadow: 0 8px 22px rgba(60, 48, 36, 0.14);
+}
+
+.uk-info-card h1 {
+   margin: 0 0 28px;
+   font-size: 55px;
+   color: #1f5f9d;
+   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.212);
+}
+
+.uk-info-card h1 span {
+   color: #2f6fad;
+}
+
+.uk-info-table {
+   width: 100%;
+   border-collapse: separate;
+   border-spacing: 0;
+   overflow: hidden;
+
+   border: 1px solid #c9d8e8;
+   border-radius: 8px;
+   background: #fffaf2;
+}
+
+.uk-info-table th,
+.uk-info-table td {
+   padding: 16px 18px;
+   text-align: center;
+   border-bottom: 1px solid #dce7f1;
+}
+
+.uk-info-table tr:last-child th,
+.uk-info-table tr:last-child td {
+   border-bottom: none;
+}
+
+.uk-info-table th {
+   width: 18%;
+   background: #2f6fad;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 800;
+}
+
+.uk-info-table td {
+   width: 32%;
+   color: #323946;
+   font-size: 15px;
+}
+
+
+/* 본문 행 */
+.uk-content-row {
+   display: grid;
+   grid-template-columns: 600px 1fr;
+   gap: 32px;
+   align-items: center;
+
+   margin-top: 42px;
+}
+
+.uk-content-row.reverse {
+   grid-template-columns: 1fr 600px;
+}
+
+/* 이미지 카드 */
+.uk-photo-card {
+   padding: 20px;
+   background: rgba(255, 252, 246, 0.96);
+   border-radius: 16px;
+   box-shadow: 0 8px 20px rgba(60, 48, 36, 0.13);
+}
+
+.uk-photo-card img {
+   width: 100%;
+   display: block;
+   object-fit: cover;
+}
+
+
+.uk-text-card {
+   min-height: 170px;
+   padding: 30px 28px;
+
+   background: rgba(255, 252, 246, 0.96);
+   border-left: 6px solid #2f6fad;
+   border-radius: 14px;
+   box-shadow: 0 8px 20px rgba(60, 48, 36, 0.13);
+}
+
+.uk-text-card:hover {
+   transform: translateY(-3px) translateX(-3px);
+   background-color: #f0f6fd;
+}
+
+.uk-text-card p+p {
+   margin-top: 22px;
+}
+
+.uk-text-card h2 {
+   margin: 0 0 40px;
+   color: #1f5f9d;
+   font-size: 44px;
+   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212);
+}
+
+.uk-text-card p {
+
+   padding: 15px;
+   margin: 0;
+   color: #303640;
+   font-size: 17px;
+   line-height: 2;
+   word-break: keep-all;
+}
+
+
+/* 반응형 */
+@media (max-width: 900px) {
+   .uk-main {
+      padding: 0 20px;
+   }
+
+   .uk-content-row,
+   .uk-content-row.reverse {
+      grid-template-columns: 1fr;
+   }
+
+   .uk-hero {
+      height: 280px;
+   }
+
+   .uk-info-table th,
+   .uk-info-table td {
+      padding: 13px 10px;
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 560px) {
+   .uk-main {
+      margin-top: 36px;
+      padding: 0 14px;
+   }
+
+   .uk-hero {
+      height: 220px;
+   }
+
+   .uk-info-card {
+      padding: 28px 18px 12px;
+   }
+
+   .uk-info-card h1 {
+      font-size: 24px;
+   }
+
+   .uk-info-table th {
+      font-size: 15px;
+   }
+
+   .uk-info-table td {
+      font-size: 13px;
+   }
+
+   .uk-text-card {
+      padding: 24px 22px;
+   }
+
+   .uk-text-card h2 {
+      font-size: 23px;
+   }
+
+   .uk-text-card p {
+      font-size: 15px;
+   }
+}
