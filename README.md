@@ -67,7 +67,7 @@
 
 ### 4-4. Netherlands Page
 
-![Netherlands](image/readme.image/netherland.jpg)
+![Netherlands](image/readme.image/netherland-page.jpg)
 
 #### 설명
 
